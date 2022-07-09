@@ -15,6 +15,9 @@ app.use(authRoutes);
 app.use(trackRoutes);
 
 const mongoUri = 'mongodb+srv://div:divdotdev@cluster0.x8vceg8.mongodb.net/?retryWrites=true&w=majority'
+// mongodb+srv://div:<password>@cluster0.x8vceg8.mongodb.net/?retryWrites=true&w=majority
+
+//if mongoose does not connect go go mongoose network tab and add ip address
 
 mongoose.connect(mongoUri);
 
